@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argamassas Quartzolit v1.0</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="https://www.quartzolit.weber/sites/br/themes/custom/weber_base/favicon.ico"/>
+  </head>
+
+    <style>
+      img {
+        width: 180px;
+      }
+
+      .modal-body p {
+        margin-bottom: 0;
+      }
+    </style>
+
+  <body>
+    <div class="container">
+      <h2 class="text-center m-5">Argamassas</h2>
+      <div class="row">
+        <h4 class="text-center m-4" style="width: 100%">Cerâmicas internas</h4>
+        <div class="col-6 mt-2">
+          <img src="https://www.quartzolit.weber/files/br/styles/768x768_resize/public/pictures/2023-09/AF-3D-WEBER-CIMENTCOLA-INTERNO-20KG-PLASTICO-SIMP_9D0F8F89853140708B80F254E992C152.jpg" class="img-thumbnail img-fluid" data-toggle="modal" data-target="#modalImagem1">
+        </div>
+        <div class="col-6 mt-2">
+          <img src="https://www.quartzolit.weber/files/br/styles/768x768_resize/public/pictures/2023-10/Super_Cozinhas_e_Banheiros_85C9C16080AA4963AEE8A3C1F3F91153.jpg" class="img-thumbnail img-fluid" data-toggle="modal" data-target="#modalImagem2">
+        </div>
+        <h4 class="text-center m-4" style="width: 100%">Cerâmicas externas</h4>
+        <div class="col-6 mt-2">
+          <img src="https://www.quartzolit.weber/files/br/styles/768x768_resize/public/pictures/2023-10/AF-3D-CIMENTCOLA-VARANDAS-E-QUINTAIS-20KG-PLASTICO-SIMP_9E13188FA9AF41DABB469174ACFCEEA2.jpg" class="img-thumbnail img-fluid" data-toggle="modal" data-target="#modalImagem3">
+        </div>
+        <div class="col-6 mt-2">
+          <img src="https://www.quartzolit.weber/files/br/styles/768x768_resize/public/pictures/2023-10/AF-3D-ARGAMASSA-CIMENTCOLA-EXTERNO-ACII-20KG-PLASTICO-AJ-SIMP_6CE06C07A3444B74B276EC8E22234FDC.jpg" class="img-thumbnail img-fluid" data-toggle="modal" data-target="#modalImagem4">
+        </div>
+        <h4 class="text-center m-4" style="width: 100%">Porcelanatos Internos</h4>
+        <div class="col-6 mt-2">
+          <img src="https://www.quartzolit.weber/files/br/styles/768x768_resize/public/pictures/2023-10/PORCELANATOS_E_CERMICAS_INTERNO_PL_277354EDAFA54194827CBF95FA4E43D1.jpg" class="img-thumbnail img-fluid" data-toggle="modal" data-target="#modalImagem5">
+        </div>
+        <div class="col-6 mt-2">
+          <img src="https://www.quartzolit.weber/files/br/styles/768x768_resize/public/pictures/2023-10/03_WEBER_PISO_SOBRE_PISO_INT_CINZA_20KG_PLASTICO_1510ED2A10D9431B964A1C878DEFA94F.jpg" class="img-thumbnail img-fluid" data-toggle="modal" data-target="#modalImagem6">
+        </div>
+        <div class="col-6 mt-2">
+          <img src="https://www.quartzolit.weber/files/br/styles/768x768_resize/public/pictures/2023-10/04_WEBER_PISO_SOBRE_PISO_INT_BRANCO_20KG_PLASTICO_CE4B72387D9F416B95EC025EA4782627.jpg" class="img-thumbnail img-fluid" data-toggle="modal" data-target="#modalImagem7">
+        </div>
+        <h4 class="text-center m-4" style="width: 100%">Porcelanatos externos</h4>
+        <div class="col-6 mt-2">
+          <img src="https://www.quartzolit.weber/files/br/styles/768x768_resize/public/pictures/2023-10/AF-3D-WEBER-PORCELANATO-EXT-CINZA-20KG-PLASTICO-SIMP_BDCA9DB2D7464276ADF23E334F793392.jpg" class="img-thumbnail img-fluid" data-toggle="modal" data-target="#modalImagem8">
+        </div>
+        <div class="col-6 mt-2">
+          <img src="https://www.quartzolit.weber/files/br/styles/768x768_resize/public/pictures/2023-10/AF-3D-WEBER-PORCELANATO-PISO-SOBRE-PISO-EXT-BRANCO-20KG-PLASTICO-SIMP_08C2F7D23CAF476DA28E8439240FC9A2.jpg" class="img-thumbnail img-fluid" data-toggle="modal" data-target="#modalImagem9">
+        </div>
+        <div class="col-6 mt-2">
+          <img src="https://www.quartzolit.weber/files/br/styles/768x768_resize/public/pictures/2023-10/01_ARGAMASSA_CIMENT_FLEX_20KG_PLASTICO_01717129B6A947299B5B2ED094029FEB.jpg" class="img-thumbnail img-fluid" data-toggle="modal" data-target="#modalImagem10">
+        </div>
+        <div class="col-6 mt-2">
+          <img src="https://www.quartzolit.weber/files/br/styles/768x768_resize/public/pictures/2023-10/02_ARGAMASSA_CIMENT_FLEX_20KG_PLASTICO_A854D375DBB54C349A2C411187510F26.jpg" class="img-thumbnail img-fluid" data-toggle="modal" data-target="#modalImagem11">
+        </div>
+        <h4 class="text-center m-4" style="width: 100%">Usos especiais</h4>
+        <div class="col-6 mt-2 mb-5">
+          <img src="https://www.quartzolit.weber/files/br/styles/768x768_resize/public/pictures/2023-10/AF-3D-SUPER-FORMATOS-20KG-PLASTICO-SIMP_FB971DBC1F0A4F4491570D9140350E23.jpg" class="img-thumbnail img-fluid" data-toggle="modal" data-target="#modalImagem12">
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <h6 class="text-center" style="font-size: 14px; color: #000000ab;">Feito por: José Augusto v1.0</h6>
+    </footer>
+
+    <div class="modal fade" id="modalImagem1" tabindex="-1" role="dialog" aria-labelledby="modalImagem1Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalImagem1Label">Argamassa ACI</h5>
+            <hr>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Cerâmicas de até 90x90cm</li>
+              <li>Pisos e paredes internas</li>
+              <li>24h para rejuntar</li>
+              <li>3 dias para liberação total</li>
+            </ul>
+            <hr>
+            <h5>Contra indicado para:</h5>
+            <ul>
+              <li>Ambientes externos, piscinas, saunas, estufas, lareiras, churrasqueiras, pisos aquecidos, frigoríficos e outros casos especiais.</li>
+              <li>Porcelanatos ou cerâmicas com absorção de água menor que 3%.</li>
+              <li>Cases com pinturas ou quaisquer materiais que possam impedir a boa aderência do cimentcola interno quartzolit.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+
+    <div class="modal fade" id="modalImagem2" tabindex="-1" role="dialog" aria-labelledby="modalImagem2Label" aria-hidden="true">
+
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalImagem2Label">Argamassa Cozinhas e Banheiros</h5>
+            <hr>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+
+              <span aria-hidden="true">×</span>
+
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Cerâmicas de até 95x95cm</li>
+              <li>Pisos e paredes internas</li>
+              <li>24 h para rejuntar</li>
+              <li>72h para liberação total</li>
+            </ul>
+            <hr>
+            <h5>Contra indicado para:</h5>
+            <ul>
+              <li>Ambientes externos, saunas, piscinas, pisos aquecidos, churrasqueiras, lareiras, frigoríficos e estufas;</li>
+              <li>Porcelanatos e cerâmicas com absorção de água &lt; 3%; </li>
+              <li>Bases com pinturas ou substâncias que impeçam a boa aderência do produto;</li>
+              <li>Blocos de concreto.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+
+    <div class="modal fade" id="modalImagem3" tabindex="-1" role="dialog" aria-labelledby="modalImagem3Label" aria-hidden="true">
+
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalImagem3Label">Argamassa Varandas e Quintais</h5>
+            <hr>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+
+              <span aria-hidden="true">×</span>
+
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Cerâmicas de até 100 x 100 cm em áreas internas 90 x 90 cm em áreas externas.</li>
+              <li>Pisos e paredes internas e externas</li>
+              <li>72h para rejuntar</li>
+              <li>14 dias para liberação total</li>
+            </ul>
+            <hr>
+            <h5>Contra indicado para:</h5>
+            <ul>
+              <li>Áreas de alto tráfego.</li>
+              <li>Piscinas, churrasqueiras, lareiras, frigoríficos, saunas e outros revestimentos especiais.</li>
+              <li>Assentamento de pedras naturais.</li>
+              <li>Assentamento sobre base drywall.</li>
+              <li>Cerâmicas do tipo porcelanato.</li>
+              <li>Porcelanatos e cerâmicas com absorção de água menor que 3%.</li>
+              <li>Assentamento em fachadas.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+
+    <div class="modal fade" id="modalImagem4" tabindex="-1" role="dialog" aria-labelledby="modalImagem4Label" aria-hidden="true">
+
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalImagem4Label">Argamassa ACII</h5>
+            <hr>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+
+              <span aria-hidden="true">×</span>
+
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Cerâmicas e placas de pedras naturais de até 120 x 120 cm em áreas internas e 100 x 100 cm em áreas externas</li>
+              <li>Pisos e paredes internas e externas</li>
+              <li>Fachadas, drywall e piscinas não aquecidas</li>
+              <li>24h para rejuntar</li>
+              <li>72h dias para liberação total</li>
+            </ul>
+            <hr>
+            <h5>Contra indicado para:</h5>
+            <ul>
+              <li>Churrasqueiras, lareiras, frigoríficos, saunas e outros revestimentos especiais.</li>
+              <li>Cerâmicas do tipo porcelanato.</li>
+              <li>Porcelanatos e cerâmicas com absorção de água menor que 3%.</li>
+              <li>Bases com pinturas ou substâncias que impeçam a boa aderência do produto;</li>
+              <li>Blocos de concreto.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+
+    <div class="modal fade" id="modalImagem5" tabindex="-1" role="dialog" aria-labelledby="modalImagem5Label" aria-hidden="true">
+
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalImagem5Label">Argamassa Porcelanatos e Cerâmicas Interno</h5>
+            <hr>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+
+              <span aria-hidden="true">×</span>
+
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Porcelanatos, cerâmicas, ladrilho hidráulico e placas de pedras naturais</li>
+              <li>Revestimentos de até 110 x 110 cm</li>
+              <li>Pisos e paredes internas</li>
+              <li>24h para rejuntar</li>
+              <li>3 dias para liberação total</li>
+            </ul>
+            <hr>
+            <h5>Contra indicado para:</h5>
+            <ul>
+              <li>Churrasqueiras, lareiras, frigoríficos, piscinas, áreas externas, fachadas, ambientes em que haja insolação direta, como: garagens, varandas, alpendres, etc., bases com pintura ou qualquer substância que possa impedir a boa aderência do porcelanato interno quartzolit.</li>
+              <li>Sobreposição de peças.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+
+    <div class="modal fade" id="modalImagem6" tabindex="-1" role="dialog" aria-labelledby="modalImagem6Label" aria-hidden="true">
+
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalImagem6Label">Argamassa Porcelanatos e Piso S/Piso Interno Cinza</h5>
+            <hr>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+
+              <span aria-hidden="true">×</span>
+
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Porcelanatos, grés, cerâmicas e pastilhas de porcelana</li>
+              <li>Revestimentos de até 130 x 130 cm em áreas internas</li>
+              <li>Revestimentos de até 90 x 90 cm em sobreposição de revestimentos antigos</li>
+              <li>Pisos, paredes e sobreposição em áreas internas</li>
+              <li>72h para rejuntar</li>
+              <li>7 dias para liberação total</li>
+            </ul>
+            <hr>
+            <h5>Contra indicado para:</h5>
+            <ul>
+              <li>Ambientes externos, fachadas, churrasqueiras, lareiras, saunas, pisos aquecidos, piscinas, frigoríficos e revestimentos especiais.</li>
+              <li>Ambientes em que haja incidência direta do sol, como garagens, varandas, alpendres, etc.</li>
+              <li>Churrasqueiras, saunas, piscinas, estufas, pisos aquecidos, lareiras, frigoríficos e outros revestimentos especiais.</li>
+              <li>Bases com pintura ou qualquer substância que possa impedir a aderência do piso sobre piso interno branco quartzolit.</li>
+              <li>Sobreposição com pastilhas e em patilhas.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+
+    <div class="modal fade" id="modalImagem7" tabindex="-1" role="dialog" aria-labelledby="modalImagem7Label" aria-hidden="true">
+
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalImagem7Label">Argamassa Porcelanatos e Piso S/Piso Interno Branco</h5>
+            <hr>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+
+              <span aria-hidden="true">×</span>
+
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Porcelanatos, grés, cerâmicas e pastilhas de porcelana</li>
+              <li>Revestimentos de até 130 x 130 cm em áreas internas</li>
+              <li>Revestimentos de até 90 x 90 cm em sobreposição de revestimentos antigos</li>
+              <li>Pisos, paredes e sobreposição em áreas internas</li>
+              <li>3h para rejuntar</li>
+              <li>12h para liberação total</li>
+            </ul>
+            <hr>
+            <h5>Contra indicado para:</h5>
+            <ul>
+              <li>Ambientes externos, fachadas, churrasqueiras, lareiras, saunas, pisos aquecidos, piscinas, frigoríficos e revestimentos especiais.</li>
+              <li>Ambientes em que haja incidência direta do sol, como garagens, varandas, alpendres, etc.</li>
+              <li>Churrasqueiras, saunas, piscinas, estufas, pisos aquecidos, lareiras, frigoríficos e outros revestimentos especiais.</li>
+              <li>Bases com pintura ou qualquer substância que possa impedir a aderência do piso sobre piso interno branco quartzolit.</li>
+              <li>Sobreposição com pastilhas e em patilhas.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+
+    <div class="modal fade" id="modalImagem8" tabindex="-1" role="dialog" aria-labelledby="modalImagem8Label" aria-hidden="true">
+
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalImagem8Label">Argamassa Porcelanatos e Piso S/Piso Externo Cinza</h5>
+            <hr>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+
+              <span aria-hidden="true">×</span>
+
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Revestimento de até 150 x 150 cm em áreas internas </li>
+              <li>Revestimentos de até 120 x 120 cm em áreas externas</li>
+              <li>Revestimentos de até 100 x 100 cm sobreposição de revestimentos antigos</li>
+              <li>Porcelanatos, grés, cerâmicas e pedras naturais</li>
+              <li>Pisos, paredes e sobreposições em áreas internas e externas</li>
+              <li>Drywall e piscinas não aquecidas</li>
+              <li>24h para rejuntar</li>
+              <li>3 dias para liberação total (interno)</li>
+              <li>7 dias para liberação piscinas</li>
+            </ul>
+            <hr>
+            <h5>Contra indicado para:</h5>
+            <ul>
+              <li>Fachadas, churrasqueiras, lareiras, saunas, pisos aquecidos, frigoríficos e revestimentos especiais</li>
+              <li>Bases com pinturas ou substâncias que impeçam a boa aderência do produto</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+
+    <div class="modal fade" id="modalImagem9" tabindex="-1" role="dialog" aria-labelledby="modalImagem9Label" aria-hidden="true">
+
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalImagem9Label">Argamassa Porcelanatos e Piso S/Piso Externo Branco</h5>
+            <hr>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+
+              <span aria-hidden="true">×</span>
+
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Revestimento de até 150 x 150 cm em áreas internas </li>
+              <li>Revestimentos de até 120 x 120 cm em áreas externas</li>
+              <li>Revestimentos de até 100 x 100 cm sobreposição de revestimentos antigos</li>
+              <li>Porcelanatos, grés, cerâmicas e pedras naturais</li>
+              <li>Pisos, paredes e sobreposições em áreas internas e externas</li>
+              <li>Drywall e piscinas não aquecidas</li>
+              <li>24h para rejuntar</li>
+              <li>3 dias para liberação total (interno)</li>
+              <li>7 dias para liberação piscinas</li>
+            </ul>
+            <hr>
+            <h5>Contra indicado para:</h5>
+            <ul>
+              <li>Saunas, piscinas, pisos aquecidos, churrasqueiras, lareiras, frigoríficos e estufas.</li>
+              <li>Bases com pinturas ou substâncias que impeçam a boa aderência do produto.</li>
+              <li>Sobreposição com pastilhas e em pastilhas.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+
+    <div class="modal fade" id="modalImagem10" tabindex="-1" role="dialog" aria-labelledby="modalImagem10Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalImagem10Label">Argamassa Flexível ACIII Cinza</h5>
+            <hr>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Revestimentos de até 170 x 170 cm em áreas internas</li>
+              <li>Revestimentos de até 150 x 150 cm em áreas externas</li>
+              <li>Revestimentos de até 120 x 120 cm em sobreposição de revestimentos antigos</li>
+              <li>Porcelanatos, mármores, granitos, grés e cerâmicas</li>
+              <li>Pisos, paredes e sobreposições em áreas internas e externas</li>
+              <li>Churrasqueiras, piscinas e saunas</li>
+              <li>Revestimentos de até 60 x 60 cm em fachadas</li>
+              <li>Tráfego leve (equipes da obra e rejuntamento): 24 horas</li>
+              <li>Tráfego intenso e liberação do ambiente para utilização : 72 horas</li>
+              <li>Piscinas: 7 dias para encher com água</li>
+            </ul>
+            <hr>
+            <h5>Contra indicado para:</h5>
+            <ul>
+              <li>Frigoríficos e estufas</li>
+              <li>Pedras do tipo “Hijau”</li>
+              <li>Porcelanatos do tipo slim/extra fino, com espessuras menores do que 5,5mm</li>
+              <li>Bases com pinturas ou substâncias que impeçam a boa aderência do produto</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+
+    <div class="modal fade" id="modalImagem11" tabindex="-1" role="dialog" aria-labelledby="modalImagem11Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalImagem11Label">Argamassa Flexível ACIII Branco</h5>
+            <hr>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Revestimentos de até 170 x 170 cm em áreas internas</li>
+              <li>Revestimentos de até 150 x 150 cm em áreas externas</li>
+              <li>Revestimentos de até 120 x 120 cm em sobreposição de revestimentos antigos</li>
+              <li>Porcelanatos, mármores, granitos, grés e cerâmicas</li>
+              <li>Pisos, paredes e sobreposições em áreas internas e externas</li>
+              <li>Churrasqueiras, piscinas e saunas</li>
+              <li>Revestimentos de até 60 x 60 cm em fachadas</li>
+              <li>24h para rejuntar</li>
+              <li>72h para liberação total</li>
+            </ul>
+            <hr>
+            <h5>Contra indicado para:</h5>
+            <ul>
+              <li>Frigoríficos e estufas</li>
+              <li>Pedras do tipo “Hijau”</li>
+              <li>Porcelanatos do tipo slim/extra fino, com espessuras menores do que 5,5mm</li>
+              <li>Bases com pinturas ou substâncias que impeçam a boa aderência do produto</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+
+    <div class="modal fade" id="modalImagem12" tabindex="-1" role="dialog" aria-labelledby="modalImagem12Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalImagem12Label">Argamassa Super Formatos</h5>
+            <hr>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Revestimentos de até 230 x 230 cm interno, externo e sobreposição</li>
+              <li>Porcelanatos, mármores, granitos, grés e cerâmicas</li>
+              <li>Pisos, paredes e sobreposições em áreas internas e externas</li>
+              <li>Fachadas, piscinas e saunas</li>
+              <li>Revestimentos de até 60 x 60 cm em fachadas</li>
+              <li>3h para rejuntar</li>
+              <li>12h para liberação total</li>
+            </ul>
+            <hr>
+            <h5>Contra indicado para:</h5>
+            <ul>
+              <li>Churrasqueiras, lareiras, frigoríficos e revestimentos especiais</li>
+              <li>Sobre bases com pintura ou quaisquer materiais que possam impedir a aderência da argamassa super formatos quartzolit</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+
+  </body>
+</html>
